@@ -1,16 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import {  routing } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MisHistorietasComponent } from './paginas/mis-historietas/mis-historietas.component';
+import { MisCosasComponent } from './paginas/mis-cosas/mis-cosas.component';
+import { MisColegasComponent } from './paginas/mis-colegas/mis-colegas.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { PaginaSelectComponent } from './pagina-select/pagina-select.component';
+import { WidgetsPaginasComponent } from './widgets-paginas/widgets-paginas.component';
+import { MisColeguillasComponent } from './widgets-paginas/mis-coleguillas/mis-coleguillas.component';
+import { DatosPersonalesComponent } from './widgets-paginas/datos-personales/datos-personales.component';
+import { InfoColegaComponent } from './widgets-paginas/info-colega/info-colega.component';
+import { InfoPosibleColegaComponent } from './widgets-paginas/info-posible-colega/info-posible-colega.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MisHistorietasComponent,
+    MisCosasComponent,
+    MisColegasComponent,
+    EncabezadoComponent,
+    PaginaSelectComponent,
+    WidgetsPaginasComponent,
+    MisColeguillasComponent,
+    DatosPersonalesComponent,
+    InfoColegaComponent,
+    InfoPosibleColegaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

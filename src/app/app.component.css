@@ -1,0 +1,7 @@
+div {
+    width: 95%;
+    border: black solid 2px;
+    position: relative;
+    left: 2.5%;
+    background-color: white;
+}
