@@ -7,13 +7,13 @@ import { User } from 'src/app/modelos-de-datos/user-data-model';
   styleUrls: ['./datos-personales.component.css']
 })
 export class DatosPersonalesComponent implements OnInit {
-user:User={id:1,
-  name:'string',
-  surname:'string',
-  birthDate:'string',
-  startDate:'string',
-  user:'string',
-  pass:'string'};
+user:User={'id':1,
+  'name':'string',
+  'surname':'string',
+  'birthDate':'string',
+  'startDate':'string',
+  'user':'string',
+  'pass':'string'};
 
   constructor() { }
 

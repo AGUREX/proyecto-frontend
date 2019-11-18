@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {  routing } from './app-routing.module';
+import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MisHistorietasComponent } from './paginas/mis-historietas/mis-historietas.component';
 import { MisCosasComponent } from './paginas/mis-cosas/mis-cosas.component';
