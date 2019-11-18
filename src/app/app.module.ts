@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {  routing } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MisHistorietasComponent } from './paginas/mis-historietas/mis-historietas.component';
@@ -14,6 +13,7 @@ import { InfoColegaComponent } from './widgets-paginas/info-colega/info-colega.c
 import { InfoPosibleColegaComponent } from './widgets-paginas/info-posible-colega/info-posible-colega.component';
 import { HistorietasComponent } from './widgets-paginas/historietas/historietas.component';
 import { PageNotFoundComponent } from './paginas/page-not-found/page-not-found.component';
+import { ServicioFreeforAllService } from './servicio-freefor-all.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { PageNotFoundComponent } from './paginas/page-not-found/page-not-found.c
     BrowserModule,
     routing
   ],
-  providers: [],
+  providers: [ServicioFreeforAllService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,9 +11,6 @@ export class MisHistorietasComponent implements OnInit {
   constructor(private route:ActivatedRoute,private router:Router) { 
 
   }
-
   ngOnInit() { this.route.params.subscribe();
   }
-
-
 }

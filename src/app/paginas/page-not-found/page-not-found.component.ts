@@ -9,9 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class PageNotFoundComponent implements OnInit {
 
   constructor(private route:ActivatedRoute,private router:Router) { 
-
   }
-
   ngOnInit() { this.route.params.subscribe();
   }
 
