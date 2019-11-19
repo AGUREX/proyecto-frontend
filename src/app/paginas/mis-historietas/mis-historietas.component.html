@@ -4,7 +4,8 @@
         <form>
             <fieldset>
                 <legend>Dí algo</legend>
-                <input type="textarea"><button>Publicar historieta</button>
+                <input type="text" [(ngModel)]="mensaje.contenido" name="historia" /><br>
+                <button type="submit" (click)="onSubmit()">Publicar historieta</button>
             </fieldset>
         </form>
     </article>

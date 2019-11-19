@@ -1,7 +1,9 @@
 <section>
     Mis Historietas
-    <article>
-        <div>historieta 1</div>
-        <div>historieta 2</div>
-    </article>
+    <ul>
+        <li *ngFor="let historia of historietas">
+            <p>{{historia.content}}</p>
+            <p>{{historia.date}}</p>
+        </li>
+    </ul>
 </section>

@@ -1,0 +1,27 @@
+{
+    "user": [{
+        "id": 1,
+        "name": "Augusto",
+        "surname": "Hernandez",
+        "birthDate": "21/01/94",
+        "startDate": "10/07/09",
+        "user": "Agurex",
+        "pass": "1234"
+    }],
+    "userReaction": [{
+        "id": 1,
+        "type": 1
+    }],
+    "storyDataModel": [{
+            "id": 1,
+            "date": "string",
+            "content": "string",
+            "reactions": 1
+        },
+        {
+            "content": "dinosaurio",
+            "date": "fecha",
+            "id": 2
+        }
+    ]
+}

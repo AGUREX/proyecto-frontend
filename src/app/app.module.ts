@@ -14,6 +14,11 @@ import { InfoPosibleColegaComponent } from './widgets-paginas/info-posible-coleg
 import { HistorietasComponent } from './widgets-paginas/historietas/historietas.component';
 import { PageNotFoundComponent } from './paginas/page-not-found/page-not-found.component';
 import { ServicioFreeforAllService } from './servicio-freefor-all.service';
+import { HttpClientModule} from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { LoginService } from './login.service';
+import { UserService } from './user.service';
+
 
 @NgModule({
   declarations: [
@@ -32,9 +37,13 @@ import { ServicioFreeforAllService } from './servicio-freefor-all.service';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [ServicioFreeforAllService],
+  providers: [ServicioFreeforAllService,
+  UserService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/modelos-de-datos/user-data-model';
+import { UserService } from 'src/app/user.service';
 
 @Component({
   selector: 'app-datos-personales',
@@ -7,17 +8,17 @@ import { User } from 'src/app/modelos-de-datos/user-data-model';
   styleUrls: ['./datos-personales.component.css']
 })
 export class DatosPersonalesComponent implements OnInit {
-user:User={'id':1,
-  'name':'string',
-  'surname':'string',
-  'birthDate':'string',
-  'startDate':'string',
-  'user':'string',
-  'pass':'string'};
+  
+users:User[];
 
-  constructor() { }
 
-  ngOnInit() {
+  constructor(private userService:UserService) { }
+
+  ngOnInit() { this.userService.getUsers().subscribe(
+    (data:User[])=> this.users= data,
+     ()=> console.log('Lista de historias cargada')
+    
+  );
   }
 
 }
