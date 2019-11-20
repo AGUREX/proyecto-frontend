@@ -5,3 +5,11 @@ div {
     left: 2.5%;
     background-color: white;
 }
+
+footer {
+    position: fixed;
+    padding: 4%;
+    background-color: rgb(237, 237, 245);
+    top: 92%;
+    width: 100%;
+}
