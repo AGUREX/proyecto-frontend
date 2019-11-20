@@ -1,8 +1,16 @@
 <section>
-    <article>
-        <p>user.name + user.surname</p>
-        <img src="https://pm1.narvii.com/6190/46713426cda73c84ed0cdf06071c0218a04f6a57_hq.jpg">
-        <app-datos-personales></app-datos-personales>
 
-    </article>
+    info colega
+    <div>
+
+        <div *ngFor="let user of userList">
+            <img *ngIf="user.id != 1 && user.friend === true" src={{user.userImage}} alt="foto-perfil">
+            <p *ngIf="user.id != 1 && user.friend === true">Nombre: {{user.name}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Apellido: {{user.surname}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Fecha de nacimiento: {{user.birthDate}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Fecha de inicio en FreeforAll: {{user.startDate}}</p>
+        </div>
+    </div>
+
+
 </section>

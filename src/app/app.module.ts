@@ -18,6 +18,7 @@ import { HttpClientModule} from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { LoginService } from './login.service';
 import { UserService } from './user.service';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { UserService } from './user.service';
     routing,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    routing
   ],
   providers: [ServicioFreeforAllService,
   UserService,LoginService],

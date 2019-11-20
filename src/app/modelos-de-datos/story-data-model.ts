@@ -3,4 +3,5 @@ export class Historieta {
     date:string;
     content:string;
     reactions:number;
+    userId:number;
 }

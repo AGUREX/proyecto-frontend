@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Historieta } from 'src/app/modelos-de-datos/story-data-model';
+import { ServicioFreeforAllService } from 'src/app/servicio-freefor-all.service';
 
 @Component({
   selector: 'app-mis-cosas',
@@ -7,12 +9,15 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./mis-cosas.component.css']
 })
 export class MisCosasComponent implements OnInit {
-
-  constructor(private route:ActivatedRoute,private router:Router) { 
-
-  }
-
-  ngOnInit() { this.route.params.subscribe();
+historietas:Historieta[];
+  constructor(private freeForAllService:ServicioFreeforAllService) { }
+  
+  ngOnInit() {
+    this.freeForAllService.getStories().subscribe(
+      (data:Historieta[])=> this.historietas= data,
+       ()=> console.log('Lista de historias cargada')
+      
+    );
   }
 
 

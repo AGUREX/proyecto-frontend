@@ -1,27 +1,88 @@
 {
-    "user": [{
-        "id": 1,
-        "name": "Augusto",
-        "surname": "Hernandez",
-        "birthDate": "21/01/94",
-        "startDate": "10/07/09",
-        "user": "Agurex",
-        "pass": "1234"
-    }],
-    "userReaction": [{
-        "id": 1,
-        "type": 1
-    }],
-    "storyDataModel": [{
-            "id": 1,
-            "date": "string",
-            "content": "string",
-            "reactions": 1
-        },
-        {
-            "content": "dinosaurio",
-            "date": "fecha",
-            "id": 2
-        }
-    ]
+  "user": [
+    {
+      "id": 1,
+      "name": "Augusto",
+      "surname": "Hernandez",
+      "birthDate": "21/01/94",
+      "startDate": "10/07/09",
+      "user": "Agurex",
+      "pass": "1234",
+      "userImage": "",
+      "seleccionado": false
+    },
+    {
+      "id": 2,
+      "name": "Juan",
+      "surname": "Plo",
+      "birthDate": "10/12/80",
+      "startDate": "20/05/12",
+      "user": "JUANplo",
+      "pass": "3456",
+      "userImage": "",
+      "friend": true,
+      "seleccionado": false
+    },
+    {
+      "id": 3,
+      "name": "Eduardo",
+      "surname": "Gomez",
+      "birthDate": "10/01/21",
+      "startDate": "09/11/10",
+      "user": "EDUARDO",
+      "pass": "987edu",
+      "userImage": "",
+      "friend": false,
+      "seleccionado": false
+    }
+  ],
+  "userReaction": [
+    {
+      "id": 1,
+      "type": 1
+    }
+  ],
+  "storyDataModel": [
+    {
+      "id": 1,
+      "date": "fecha",
+      "content": "hola",
+      "reactions": 1
+    },
+    {
+      "content": "chao",
+      "date": "fecha",
+      "id": 2
+    },
+    {
+      "content": "adios",
+      "date": "fecha",
+      "id": 3
+    },
+    {
+      "content": "adios",
+      "date": "fecha",
+      "id": 4
+    },
+    {
+      "content": "herre",
+      "date": "fecha",
+      "id": 5
+    },
+    {
+      "content": "jlkdshlakjsdhf",
+      "date": "fecha",
+      "id": 6
+    },
+    {
+      "content": "dinosaurio",
+      "date": "fecha",
+      "id": 7
+    },
+    {
+      "content": "blablabla ",
+      "date": "fecha",
+      "id": 8
+    }
+  ]
 }

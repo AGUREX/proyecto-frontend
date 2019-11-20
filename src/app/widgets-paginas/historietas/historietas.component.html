@@ -1,4 +1,13 @@
-<section>
+<article>
+    <form>
+        <fieldset>
+            <legend>Dí algo</legend>
+            <input type="text" [(ngModel)]="mensaje.contenido" name="historia" /><br>
+            <button type="submit" (click)="onSubmit()">Publicar historieta</button>
+        </fieldset>
+    </form>
+</article>
+<article>
     Mis Historietas
     <ul>
         <li *ngFor="let historia of historietas">
@@ -6,4 +15,4 @@
             <p>{{historia.date}}</p>
         </li>
     </ul>
-</section>
+</article>

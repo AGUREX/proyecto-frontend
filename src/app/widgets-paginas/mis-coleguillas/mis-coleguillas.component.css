@@ -1,3 +1,15 @@
 section {
     border: black solid 1px;
 }
+
+div:hover {
+    background-color: rgba(255, 255, 0, 0.178);
+}
+
+.selected {
+    background-color: rgba(154, 209, 82, 0.486);
+}
+
+.usuario {
+    background-color: rgb(255, 255, 255);
+}

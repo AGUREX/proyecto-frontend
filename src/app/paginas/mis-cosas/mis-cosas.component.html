@@ -1,15 +1,15 @@
 <app-encabezado></app-encabezado>
 <main>
-    <article>
-        <form>
-            <fieldset>
-                <legend>Dí algo</legend>
-                <input type="textarea"><button>Publicar historieta</button>
-            </fieldset>
-        </form>
-    </article>
-    <app-historietas></app-historietas>
     <app-datos-personales></app-datos-personales>
+    <article>
+        Mis Historietas
+        <ul>
+            <li *ngFor="let historia of historietas">
+                <p>{{historia.content}}</p>
+                <p>{{historia.date}}</p>
+            </li>
+        </ul>
+    </article>
     <app-mis-coleguillas></app-mis-coleguillas>
 
 

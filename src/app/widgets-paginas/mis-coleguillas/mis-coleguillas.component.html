@@ -1,10 +1,12 @@
 <section>
-    <article>
-        Mis coleguillas
-        <div>
-            <p>info-colega 1</p>
-            <p>info-colega 2</p>
-            <p>info-colega 3</p>
+    mis coleguillas
+    <div *ngFor="let user of userList">
+        <div (click)="selecciona(user)" [class.selected]="user.seleccionado" [class.usuario]="!user.seleccionado">
+            <img *ngIf="user.id != 1 && user.friend === true" src="{{user.userImage}}" alt="foto-perfil">
+            <p *ngIf="user.id != 1 && user.friend === true">Nombre: {{user.name}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Apellido: {{user.surname}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Fecha de nacimiento: {{user.birthDate}}</p>
+            <p *ngIf="user.id != 1 && user.friend === true">Fecha de inicio en FreeforAll: {{user.startDate}}</p>
         </div>
-    </article>
+    </div>
 </section>

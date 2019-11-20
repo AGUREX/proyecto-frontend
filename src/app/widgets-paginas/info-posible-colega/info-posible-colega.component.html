@@ -1,8 +1,19 @@
 <section>
+    info posible colega
     <article>
-        <p>user.name + user.surname</p>
-        <img src="https://pm1.narvii.com/6190/46713426cda73c84ed0cdf06071c0218a04f6a57_hq.jpg">
-        <button>Solicitar amistad</button>
+
+        <div>
+
+            <div *ngFor="let user of userList">
+                <img *ngIf="user.id != 1 && user.friend === false" src="{{user?.userImage}}" alt="foto-perfil">
+                <p *ngIf="user.id != 1 && user.friend === false">Nombre: {{user.name}}</p>
+                <p *ngIf="user.id != 1 && user.friend === false">Apellido: {{user.surname}}</p>
+                <p *ngIf="user.id != 1 && user.friend === false">Fecha de nacimiento: {{user.birthDate}}</p>
+                <p *ngIf="user.id != 1 && user.friend === false">Fecha de inicio en FreeforAll: {{user.startDate}}</p>
+                <button *ngIf="user.id != 1 && user.friend === false" (click)="addFriend(user)">Solicitar amistad</button>
+            </div>
+        </div>
+
 
     </article>
 </section>

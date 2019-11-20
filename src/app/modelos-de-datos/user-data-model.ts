@@ -7,5 +7,8 @@ export class User{
     startDate:string;
     user:string;
     pass:string;
+    userIcon:string;
+    friend:boolean;
+    seleccionado:boolean;
     
 }
