@@ -27,4 +27,9 @@ ngOnInit() { this.userService.getUsers().subscribe(
     this.userService.updateUser(user).subscribe();
   }
 
+  addFriend(user:User) {
+    user.friend = true;
+    this.userService.updateUser(user).subscribe();
+  }
+
 }

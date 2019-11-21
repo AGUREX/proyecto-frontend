@@ -1,13 +1,24 @@
-<app-encabezado></app-encabezado>
+<header>
+    <app-pagina-select></app-pagina-select>
+</header>
 <main>
-    <app-datos-personales></app-datos-personales>
+    <section *ngIf="login">
+        <div></div>
+        <div><img [src]="login.userImage" width="300" height="300"></div>
+        <div><span>{{login.name}} {{login.surname}}</span></div>
+    </section>
+    <app-datos-personales [showAll]="false"></app-datos-personales>
     <article>
         Mis Historietas
         <ul>
-            <li *ngFor="let historia of historietas">
-                <p>{{historia.content}}</p>
-                <p>{{historia.date}}</p>
-            </li>
+            <ng-container *ngFor="let historia of historietas">
+                <ng-container *ngIf="historia.author === 'Agurex'">
+                    <li>
+                        <p>{{historia.content}}</p>
+                        <p>{{historia.date}}</p>
+                    </li>
+                </ng-container>
+            </ng-container>
         </ul>
     </article>
     <app-mis-coleguillas></app-mis-coleguillas>

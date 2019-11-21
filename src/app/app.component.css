@@ -7,9 +7,14 @@ div {
 }
 
 footer {
-    position: fixed;
-    padding: 4%;
+    position: sticky;
+    padding: 2.5%;
     background-color: rgb(237, 237, 245);
-    top: 92%;
+    top: 92.5%;
     width: 100%;
+    text-align: center;
+}
+
+span {
+    color: rgb(0, 0, 0);
 }

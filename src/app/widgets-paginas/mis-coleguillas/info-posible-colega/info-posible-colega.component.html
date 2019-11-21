@@ -1,0 +1,15 @@
+<section>
+    info posible colega
+    <article>
+        <div>
+            <div *ngFor="let user of userList">
+                <img *ngIf="user.id != 1 && user.friend === false" src="{{user?.userImage}}" alt="foto-perfil" width="70" height="70">
+                <span *ngIf="user.id != 1 && user.friend === false"> {{user.name}}</span>
+                <span *ngIf="user.id != 1 && user.friend === false"> {{user.surname}}</span><br>
+                <!-- <p *ngIf="user.id != 1 && user.friend === false">Fecha de nacimiento: {{user.birthDate}}</p>
+                <p *ngIf="user.id != 1 && user.friend === false">Fecha de inicio en FreeforAll: {{user.startDate}}</p> -->
+                <button *ngIf="user.id != 1 && user.friend === false" (click)="addFriend(user)">Solicitar amistad</button>
+            </div>
+        </div>
+    </article>
+</section>

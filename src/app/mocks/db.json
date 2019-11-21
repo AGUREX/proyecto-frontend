@@ -8,7 +8,8 @@
       "startDate": "10/07/09",
       "user": "Agurex",
       "pass": "1234",
-      "userImage": "",
+      "userImage": "./assets/random.png",
+      "friend": false,
       "seleccionado": false
     },
     {
@@ -19,7 +20,7 @@
       "startDate": "20/05/12",
       "user": "JUANplo",
       "pass": "3456",
-      "userImage": "",
+      "userImage": "./assets/random.png",
       "friend": true,
       "seleccionado": false
     },
@@ -27,11 +28,47 @@
       "id": 3,
       "name": "Eduardo",
       "surname": "Gomez",
-      "birthDate": "10/01/21",
+      "birthDate": "10/01/89",
       "startDate": "09/11/10",
       "user": "EDUARDO",
       "pass": "987edu",
-      "userImage": "",
+      "userImage": "./assets/random.png",
+      "friend": true,
+      "seleccionado": false
+    },
+    {
+      "id": 4,
+      "name": "Isabell",
+      "surname": "Curie",
+      "birthDate": "10/01/90",
+      "startDate": "09/05/08",
+      "user": "IsaBell",
+      "pass": "567Isa",
+      "userImage": "./assets/random.png",
+      "friend": false,
+      "seleccionado": false
+    },
+    {
+      "id": 5,
+      "name": "Ana",
+      "surname": "Grop",
+      "birthDate": "10/01/78",
+      "startDate": "09/11/10",
+      "user": "GRopAna",
+      "pass": "0909",
+      "userImage": "./assets/random.png",
+      "friend": false,
+      "seleccionado": false
+    },
+    {
+      "id": 6,
+      "name": "Angel",
+      "surname": "Gomez",
+      "birthDate": "10/01/60",
+      "startDate": "23/04/10",
+      "user": "AngelGomz",
+      "pass": "contraseña",
+      "userImage": "./assets/random.png",
       "friend": false,
       "seleccionado": false
     }
@@ -47,42 +84,50 @@
       "id": 1,
       "date": "fecha",
       "content": "hola",
-      "reactions": 1
+      "reactions": 1,
+      "author": "Agurex"
     },
     {
       "content": "chao",
       "date": "fecha",
-      "id": 2
+      "id": 2,
+      "author": "Agurex"
     },
     {
       "content": "adios",
       "date": "fecha",
-      "id": 3
+      "id": 3,
+      "author": "Agurex"
     },
     {
       "content": "adios",
       "date": "fecha",
-      "id": 4
+      "id": 4,
+      "author": "JUANplo"
     },
     {
-      "content": "herre",
+      "content": "adios",
       "date": "fecha",
-      "id": 5
+      "id": 5,
+      "author": "EDUARDO"
     },
     {
-      "content": "jlkdshlakjsdhf",
+      "content": "adios",
       "date": "fecha",
-      "id": 6
+      "id": 6,
+      "author": "JUANplo"
     },
     {
-      "content": "dinosaurio",
+      "content": "adios",
       "date": "fecha",
-      "id": 7
+      "id": 7,
+      "author": "IsaBell"
     },
     {
-      "content": "blablabla ",
+      "content": "adios",
       "date": "fecha",
-      "id": 8
+      "id": 8,
+      "author": "IsaBell"
     }
   ]
 }

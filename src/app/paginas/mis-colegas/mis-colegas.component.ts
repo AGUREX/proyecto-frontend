@@ -8,11 +8,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class MisColegasComponent implements OnInit {
 
-  constructor(private route:ActivatedRoute,private router:Router) { 
+  constructor(private route:ActivatedRoute) { 
 
   }
 
-  ngOnInit() { this.route.params.subscribe();
+  ngOnInit() { 
   }
 
 }

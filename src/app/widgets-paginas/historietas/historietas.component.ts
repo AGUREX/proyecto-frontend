@@ -24,7 +24,6 @@ export class HistorietasComponent implements OnInit {
       );
     }
     
-    
     addHistorieta(historieta: Historieta){
       this.freeForAllService.addHistorieta(historieta).subscribe(historieta=> this.historietas.push(historieta));
     }
@@ -33,7 +32,9 @@ export class HistorietasComponent implements OnInit {
       let historieta = new Historieta;
       historieta.content = this.mensaje.contenido;
       historieta.date = "fecha";
+      historieta.author= "Agurex";
       historieta.reactions = undefined;
+
       this.freeForAllService.addHistorieta(historieta).subscribe(
       () => {
           return this.historietas.push(historieta)

@@ -1,0 +1,16 @@
+<section>
+
+    info colega
+    <div>
+
+        <div *ngFor="let user of userList">
+            <ng-container *ngIf="user.seleccionado === true">
+                <img *ngIf="user.id != 1 && user.friend === true" src={{user.userImage}} alt="foto-perfil" width="70" height="70">
+                <p *ngIf="user.id != 1 && user.friend === true">Nombre: {{user.name}}</p>
+                <p *ngIf="user.id != 1 && user.friend === true">Apellido: {{user.surname}}</p>
+                <p *ngIf="user.id != 1 && user.friend === true">Fecha de nacimiento: {{user.birthDate}}</p>
+                <p *ngIf="user.id != 1 && user.friend === true">Fecha de inicio en FreeforAll: {{user.startDate}}</p>
+            </ng-container>
+        </div>
+    </div>
+</section>

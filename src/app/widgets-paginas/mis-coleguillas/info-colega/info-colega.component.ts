@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { User } from 'src/app/modelos-de-datos/user-data-model';
 import { UserService } from 'src/app/user.service';
 
@@ -8,14 +8,11 @@ import { UserService } from 'src/app/user.service';
   styleUrls: ['./info-colega.component.css']
 })
 export class InfoColegaComponent implements OnInit {
-userList:User[];
-  constructor(private userService:UserService) { }
+  @Input() userList:User[];
+  
+  constructor() { }
 
-  ngOnInit() { this.userService.getUsers().subscribe(
-    (data:User[])=> this.userList= data,
-     ()=> console.log('Lista de usuarios cargada')
-  );
-
+  ngOnInit() { 
   }
 
 }
