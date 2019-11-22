@@ -21,7 +21,7 @@
       "user": "JUANplo",
       "pass": "3456",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     },
     {
@@ -33,7 +33,7 @@
       "user": "EDUARDO",
       "pass": "987edu",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     },
     {
@@ -45,7 +45,7 @@
       "user": "IsaBell",
       "pass": "567Isa",
       "userImage": "./assets/random.png",
-      "friend": true,
+      "friend": false,
       "seleccionado": false
     },
     {
@@ -57,7 +57,7 @@
       "user": "GRopAna",
       "pass": "0909",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     },
     {
@@ -69,7 +69,7 @@
       "user": "AngelGomz",
       "pass": "contraseña",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     }
   ],
