@@ -11,11 +11,13 @@ export class InfoColegaComponent implements OnInit {
   @Input() userList:User[];
   @Output() user:EventEmitter<User> = new EventEmitter<User>();
   
-  constructor() { }
+  constructor(private userservice:UserService) { }
 
   ngOnInit() { 
   }
  deleteUser(user:User){
     this.user.emit(user);
+    user.seleccionado = false;
+    this.userservice.updateUser(user).subscribe();
   }
 }

@@ -21,7 +21,7 @@
       "user": "JUANplo",
       "pass": "3456",
       "userImage": "./assets/random.png",
-      "friend": true,
+      "friend": false,
       "seleccionado": false
     },
     {
@@ -57,7 +57,7 @@
       "user": "GRopAna",
       "pass": "0909",
       "userImage": "./assets/random.png",
-      "friend": true,
+      "friend": false,
       "seleccionado": false
     },
     {
