@@ -1,14 +1,18 @@
 <section>
-    mis coleguillas
-    <div *ngFor="let user of userList">
-        <div (click)="selecciona(user)" [class.selected]="user.seleccionado" [class.usuario]="!user.seleccionado">
-            <img *ngIf="user.id != 1 && user.friend === true" src="{{user.userImage}}" alt="foto-perfil" width="40" height="40">
-            <span *ngIf="user.id != 1 && user.friend === true"> {{user.name}}</span>
-            <span *ngIf="user.id != 1 && user.friend === true"> {{user.surname}}</span>
-            <!-- <p *ngIf="user.id != 1 && user.friend === true">Fecha de nacimiento: {{user.birthDate}}</p>
+    <h3>mis coleguillas</h3>
+    <ng-container *ngFor="let user of userList">
+        <ng-container *ngIf="user.id != 1 && user.friend === true">
+            <article>
+                <div (click)="selecciona(user)" [class.selected]="user.seleccionado" [class.usuario]="!user.seleccionado">
+                    <img src="{{user.userImage}}" alt="foto-perfil" width="40" height="40">
+                    <span> {{user.name}}</span>
+                    <span> {{user.surname}}</span>
+                    <!-- <p *ngIf="user.id != 1 && user.friend === true">Fecha de nacimiento: {{user.birthDate}}</p>
             <p *ngIf="user.id != 1 && user.friend === true">Fecha de inicio en FreeforAll: {{user.startDate}}</p> -->
-        </div>
-    </div>
-    <app-info-colega [userList]="userList"></app-info-colega>
-    <app-info-posible-colega [userList]="userList" (user)="addFriend($event)"></app-info-posible-colega>
+                </div>
+            </article>
+        </ng-container>
+    </ng-container>
+    <app-info-colega [userList]="userList" (user)="deleteUser($event)"></app-info-colega>
+    <app-info-posible-colega [userList]="userList " (user)="addFriend($event) "></app-info-posible-colega>
 </section>

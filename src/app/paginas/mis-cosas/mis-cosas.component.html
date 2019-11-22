@@ -5,11 +5,11 @@
     <section *ngIf="login">
         <div></div>
         <div><img [src]="login.userImage" width="300" height="300"></div>
-        <div><span>{{login.name}} {{login.surname}}</span></div>
+        <div><span id="nombre">{{login.name}} {{login.surname}}</span></div>
     </section>
     <app-datos-personales [showAll]="false"></app-datos-personales>
-    <article>
-        Mis Historietas
+    <article id="lista">
+        <h3>Historietas</h3>
         <ul>
             <ng-container *ngFor="let historia of historietas">
                 <ng-container *ngIf="historia.author === 'Agurex'">
@@ -22,8 +22,4 @@
         </ul>
     </article>
     <app-mis-coleguillas></app-mis-coleguillas>
-
-
-
-
 </main>

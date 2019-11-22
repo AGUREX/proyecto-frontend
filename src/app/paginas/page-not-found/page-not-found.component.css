@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Maven+Pro&display=swap');
 p {
     text-align: center;
+}
+
+p,
+span {
+    font-family: 'Maven Pro', sans-serif;
 }

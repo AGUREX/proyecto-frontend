@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { User } from 'src/app/modelos-de-datos/user-data-model';
 import { UserService } from 'src/app/user.service';
 
@@ -9,10 +9,13 @@ import { UserService } from 'src/app/user.service';
 })
 export class InfoColegaComponent implements OnInit {
   @Input() userList:User[];
+  @Output() user:EventEmitter<User> = new EventEmitter<User>();
   
   constructor() { }
 
   ngOnInit() { 
   }
-
+ deleteUser(user:User){
+    this.user.emit(user);
+  }
 }

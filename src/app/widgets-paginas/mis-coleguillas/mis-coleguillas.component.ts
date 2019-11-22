@@ -31,5 +31,10 @@ ngOnInit() { this.userService.getUsers().subscribe(
     user.friend = true;
     this.userService.updateUser(user).subscribe();
   }
-
+  
+  deleteUser(user:User) {
+    user.friend = false;
+    user.seleccionado = true;
+    this.userService.updateUser(user).subscribe();
+  }
 }

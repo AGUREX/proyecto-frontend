@@ -33,7 +33,7 @@
       "user": "EDUARDO",
       "pass": "987edu",
       "userImage": "./assets/random.png",
-      "friend": true,
+      "friend": false,
       "seleccionado": false
     },
     {
@@ -45,7 +45,7 @@
       "user": "IsaBell",
       "pass": "567Isa",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     },
     {
@@ -57,7 +57,7 @@
       "user": "GRopAna",
       "pass": "0909",
       "userImage": "./assets/random.png",
-      "friend": false,
+      "friend": true,
       "seleccionado": false
     },
     {
@@ -128,6 +128,18 @@
       "date": "fecha",
       "id": 8,
       "author": "IsaBell"
+    },
+    {
+      "content": "prueba",
+      "date": "fecha",
+      "author": "Agurex",
+      "id": 9
+    },
+    {
+      "content": "mensaje nuevo",
+      "date": "fecha",
+      "author": "Agurex",
+      "id": 10
     }
   ]
 }

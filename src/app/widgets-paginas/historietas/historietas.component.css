@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Maven+Pro&display=swap');
 section {
-    border: black solid 1px;
+    border: grey solid 1px;
+    box-shadow: 0 -10px 20px grey;
+}
+
+* {
+    border-radius: 10px;
+}
+
+li {
+    padding: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 2px;
+}
+
+article {
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+#lista {
+    height: 10em;
+    border: grey solid 1px;
+    overflow: scroll;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    display: none;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 9px;
+    height: 15px;
+    border-radius: 25%;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h3 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+p,
+span,
+button {
+    font-family: 'Maven Pro', sans-serif;
 }

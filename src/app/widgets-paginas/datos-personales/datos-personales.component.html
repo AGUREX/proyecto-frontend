@@ -1,11 +1,17 @@
-<section>
-    <article>
-        Datos personales
-        <div *ngFor="let user of users">
-            <p *ngIf="user.id === 1 && showAll">Nombre: {{user.name}}</p>
-            <p *ngIf="user.id === 1 && showAll">Apellido: {{user.surname}}</p>
-            <p *ngIf="user.id === 1 ">Fecha de nacimiento: {{user.birthDate}}</p>
-            <p *ngIf="user.id === 1 ">Fecha de inicio en FreeforAll: {{user.startDate}}</p>
-        </div>
-    </article>
-</section>
+<ng-container *ngFor="let user of users">
+    <ng-container *ngIf="user.id === 1">
+        <section>
+            <article>
+                <h3>Datos personales</h3>
+                <div>
+                    <ng-container *ngIf="showAll">
+                        <p>Nombre: {{user.name}}</p>
+                        <p>Apellido: {{user.surname}}</p>
+                    </ng-container>
+                    <p>Fecha de nacimiento: {{user.birthDate}}</p>
+                    <p>Fecha de inicio en FreeforAll: {{user.startDate}}</p>
+                </div>
+            </article>
+        </section>
+    </ng-container>
+</ng-container>
